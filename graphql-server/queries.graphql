@@ -1,0 +1,129 @@
+# Fetch all contacts
+query {
+  contacts {
+    id
+    contactId
+    name
+    email
+    phone
+    address
+  }
+}
+# Fetch a contact by ID
+query {
+  contact(id: "C002") {
+    id
+    contactId
+    name
+    email
+    phone
+    address
+  }
+}
+# Mutation to create a contact
+mutation {
+  updateContact(
+    id: "C003"
+    contactId: "C003"
+    name: "Michael J."
+    email: "michael.j@example.com"
+    phone: "+1122334456"
+    address: "789 Palm Street, Miami, FL"
+  ) {
+    id
+    contactId
+    name
+    email
+    phone
+    address
+  }
+}
+# Mutation to deleteContact
+mutation {
+  deleteContact(id: "C004") {
+    id
+    name
+  }
+}
+
+# Mutation to create
+mutation {
+  createContact(
+    contactId: "C001"
+    name: "John Doe"
+    email: "john.doe@example.com"
+    phone: "+123456789"
+    address: "123 Main Street, New York, NY"
+  ) {
+    id
+    contactId
+    name
+    email
+    phone
+    address
+  }
+}
+mutation {
+  createContact(
+    contactId: "C002"
+    name: "Jane Smith"
+    email: "jane.smith@example.com"
+    phone: "+198765432"
+    address: "456 Oak Street, Los Angeles, CA"
+  ) {
+    id
+    contactId
+    name
+    email
+    phone
+    address
+  }
+}
+mutation {
+  createContact(
+    contactId: "C003"
+    name: "Michael Johnson"
+    email: "michael.johnson@example.com"
+    phone: "+1122334455"
+    address: "789 Pine Street, Miami, FL"
+  ) {
+    id
+    contactId
+    name
+    email
+    phone
+    address
+  }
+}
+mutation {
+  createContact(
+    contactId: "C004"
+    name: "Emily White"
+    email: "emily.white@example.com"
+    phone: "+155566677"
+    address: "101 Maple Street, Chicago, IL"
+  ) {
+    id
+    contactId
+    name
+    email
+    phone
+    address
+  }
+}
+mutation {
+  createContact(
+    contactId: "C005"
+    name: "David Brown"
+    email: "david.brown@example.com"
+    phone: "+166778899"
+    address: "202 Birch Street, Dallas, TX"
+  ) {
+    id
+    contactId
+    name
+    email
+    phone
+    address
+  }
+}
